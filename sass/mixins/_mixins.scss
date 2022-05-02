@@ -1,0 +1,42 @@
+@use '../variables/fonts';
+
+@mixin resetStyleSheet {
+    margin: 0;
+    border: 0;
+    padding: 0;
+    box-sizing: border-box;
+};
+
+@mixin setHTML {
+    font-size: fonts.$size;
+}
+
+@mixin setBody {
+    width: 100%;
+    min-height: 100vh;
+}
+
+@mixin setContainer {
+    width: 90%;
+    max-width: 1300px;
+    margin: 0 auto;
+    overflow: hidden;
+    padding: 60px;
+}
+
+@mixin setBackgroundColor($position, $backgroundColor) {
+    &:nth-child(#{$position}) {
+        background-color: $backgroundColor;
+
+        .card__link {
+            color: $backgroundColor;
+        }
+    }
+}
+
+@mixin setBorderRadius($position, $r1, $r2, $r3, $r4) {
+    
+    &:nth-child(#{$position}) {
+        border-radius: $r1 $r2 $r3 $r4;
+    }
+}

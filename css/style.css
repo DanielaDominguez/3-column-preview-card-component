@@ -1,0 +1,120 @@
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap");
+*,
+::after,
+::before {
+  margin: 0;
+  border: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 15px;
+}
+
+body {
+  width: 100%;
+  min-height: 100vh;
+  background-color: hsl(0deg, 0%, 95%);
+}
+
+.container {
+  width: 90%;
+  max-width: 1300px;
+  margin: 0 auto;
+  overflow: hidden;
+  padding: 60px;
+}
+
+.main .cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-auto-rows: 600px;
+}
+.main .cards .card {
+  padding: 40px 60px;
+  display: flex;
+  flex-direction: column;
+}
+@media screen and (max-width: 768px) {
+  .main .cards .card {
+    padding: 60px 20px;
+  }
+}
+.main .cards .card:nth-child(1) {
+  background-color: hsl(31deg, 77%, 52%);
+}
+.main .cards .card:nth-child(1) .card__link {
+  color: hsl(31deg, 77%, 52%);
+}
+.main .cards .card:nth-child(2) {
+  background-color: hsl(184deg, 100%, 22%);
+}
+.main .cards .card:nth-child(2) .card__link {
+  color: hsl(184deg, 100%, 22%);
+}
+.main .cards .card:nth-child(3) {
+  background-color: hsl(179deg, 100%, 13%);
+}
+.main .cards .card:nth-child(3) .card__link {
+  color: hsl(179deg, 100%, 13%);
+}
+.main .cards .card:nth-child(1) {
+  border-radius: 10px 0 0 10px;
+}
+.main .cards .card:nth-child(2) {
+  border-radius: 0 0 0 0;
+}
+.main .cards .card:nth-child(3) {
+  border-radius: 0 10px 10px 0;
+}
+@media screen and (max-width: 768px) {
+  .main .cards .card:nth-child(1) {
+    border-radius: 10px 10px 0 0;
+  }
+  .main .cards .card:nth-child(2) {
+    border-radius: 0 0 0 0;
+  }
+  .main .cards .card:nth-child(3) {
+    border-radius: 0 0 10px 10px;
+  }
+}
+.main .cards .card .card__img {
+  display: block;
+  width: 70px;
+  height: 100px;
+  object-fit: contain;
+}
+.main .cards .card .card__title {
+  font-family: "Big Shoulders Display", cursive;
+  font-size: 3.3rem;
+  text-transform: uppercase;
+  color: hsl(0deg, 0%, 95%);
+  margin: 30px 0 35px 0;
+}
+.main .cards .card .card__paragraph {
+  font-family: "Lexend Deca", sans-serif;
+  color: hsla(0deg, 0%, 100%, 0.75);
+  line-height: 1.7;
+}
+.main .cards .card .card__link {
+  margin-top: auto;
+  background-color: hsl(0deg, 0%, 95%);
+  text-decoration: none;
+  padding: 15px 40px;
+  align-self: flex-start;
+  border-radius: 40px;
+  font-family: "Lexend Deca", sans-serif;
+  border: 2px solid hsl(0deg, 0%, 95%);
+  transition: all 300ms ease-in;
+}
+.main .cards .card .card__link:hover {
+  background-color: transparent;
+  color: hsl(0deg, 0%, 95%);
+}
+.main .attibution {
+  font-family: "Lexend Deca", sans-serif;
+  text-align: center;
+}
+
+/*# sourceMappingURL=style.css.map */
